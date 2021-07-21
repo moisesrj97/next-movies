@@ -7,8 +7,8 @@ import React from 'react';
 
 const FilmPage = withRouter((props) => {
   return (
-    <div className="flex items-center justify-around min-h-full py-2">
-      <img src={'https://image.tmdb.org/t/p/original/' + props.movieData.poster_path} className="w-3/12 m-5 ml-14 "></img>
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-full py-2">
+      <img src={'https://image.tmdb.org/t/p/original/' + props.movieData.poster_path} className=" w-10/12 md:w-3/12 md:m-5 md:ml-14 "></img>
       <div className="w-6/12 flex flex-col items-center justify-start">
         <h1 className="text-2xl font-bold mb-4">
           {props.movieData.title} - {props.movieData.vote_average}/10⭐
