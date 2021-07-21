@@ -17,7 +17,7 @@ const Search = ({ firstMovies }) => {
         method: 'get',
         url: 'https://api.themoviedb.org/3/search/movie',
         params: {
-          api_key: q,
+          api_key: '96a84610e9b7d681c3f898dbb5507656',
           query: title,
           page: 1,
         },
