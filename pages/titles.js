@@ -17,7 +17,7 @@ const Search = ({ firstMovies }) => {
         method: 'get',
         url: 'https://api.themoviedb.org/3/search/movie',
         params: {
-          api_key: '96a84610e9b7d681c3f898dbb5507656',
+          api_key: process.env.NEXT_PUBLIC_API_KEY,
           query: title,
           page: 1,
         },
@@ -38,7 +38,7 @@ Search.getInitialProps = async (context) => {
     method: 'get',
     url: 'https://api.themoviedb.org/3/discover/movie',
     params: {
-      api_key: '96a84610e9b7d681c3f898dbb5507656',
+      api_key: process.env.NEXT_PUBLIC_API_KEY,
       sort_by: 'popularity.desc',
     },
   });

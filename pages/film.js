@@ -30,7 +30,7 @@ FilmPage.getInitialProps = async (context) => {
     method: 'get',
     url: 'https://api.themoviedb.org/3/movie/' + context.query.id,
     params: {
-      api_key: '96a84610e9b7d681c3f898dbb5507656',
+      api_key: process.env.NEXT_PUBLIC_API_KEY,
     },
   });
 
