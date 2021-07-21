@@ -21,7 +21,7 @@ const Genres = ({ genres, movies, preId }) => {
       method: 'get',
       url: 'https://api.themoviedb.org/3/discover/movie',
       params: {
-        api_key: process.env.NEXT_PUBLIC_API_KEY,
+        api_key: '96a84610e9b7d681c3f898dbb5507656',
         with_genres: genre,
       },
     }).then((response) => setGenreMovies(response.data));
@@ -54,7 +54,7 @@ Genres.getInitialProps = async (context) => {
     method: 'get',
     url: 'https://api.themoviedb.org/3/genre/movie/list',
     params: {
-      api_key: process.env.NEXT_PUBLIC_API_KEY,
+      api_key: '96a84610e9b7d681c3f898dbb5507656',
     },
   });
 
@@ -62,7 +62,7 @@ Genres.getInitialProps = async (context) => {
     method: 'get',
     url: 'https://api.themoviedb.org/3/discover/movie',
     params: {
-      api_key: process.env.NEXT_PUBLIC_API_KEY,
+      api_key: '96a84610e9b7d681c3f898dbb5507656',
       with_genres: 28,
     },
   });
